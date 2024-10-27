@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -312,6 +312,58 @@
             </div>
         </section>
     </main>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-cross">
+                <a href="" class="modal-link-cross">
+                    <svg class="modal-link-cross-svg" width="8" height="8">
+                        <use href="./images/icons.svg#icon-cross" />
+                    </svg>
+                </a>
+            </div>
+            <section class="information">
+                <p class="information-title">Leave your contacts and we will call you back</p>
+                <form class="form">
+                    <label class="form-label">
+                        Name
+                        <div class="input-container">
+                            <input class="form-input" type="text" name="Name"  />
+                            <svg class="modal-link-input-svg" width="12" height="12">
+                                <use href="./images/icons.svg#icon-name" />
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="form-label">
+                        Phone
+                        <div class="input-container">
+                            <input class="form-input" type="tel" name="Phone" />
+                            <svg class="modal-link-input-svg" width="12" height="12">
+                                <use href="./images/icons.svg#icon-tel" />
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="form-label">
+                        Email
+                        <div class="input-container">
+                            <input class="form-input" type="email" name="Email" />
+                            <svg class="modal-link-input-svg" width="12" height="12">
+                                <use href="./images/icons.svg#icon-mail" />
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="form-label">
+                        Comment
+                        <textarea class="form-input-textarea" placeholder="Text input" rows="5" type="text" name="Comment"></textarea>
+                    </label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label>I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+                    </div>
+                    <button class="send-button" type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container-footer container">
             <div class="footer-cont-1">
@@ -350,6 +402,21 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-cont-3">
+                <p class="footer-con">Subscribe</p>
+                <div class="input-container-footer">
+                    <input type="email" class="subscribe-input" placeholder="E-mail" required />
+                    <button class="subscribe-button">
+                        Subscribe
+                        <a href="" class="footer-subscribe-svg-link">
+                            <svg class="footer-subscribe-svg-link" width="24" height="20">
+                                <use href="./images/icons.svg#icon-icon-send" />
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+                
             </div>
         </div>
     </footer>
