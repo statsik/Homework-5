@@ -224,7 +224,7 @@ img{
     margin-top: 10px;
  }
  .checkbox-group-input:checked + .checkbox-group-lab > .checkbox-group-lab-link{
-    background-color: var(--iris);
+    background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
  } 
