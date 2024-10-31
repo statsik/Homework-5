@@ -84,11 +84,15 @@ img{
 .modal-cross:hover{
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
 }
 .modal-cross:focus{
     background-color: #404bbf;
     border: none;
+}
+.modal-cross:hover .modal-link-cross-svg{
+    fill: #ffffff;
+}
+.modal-cross:focus .modal-link-cross-svg{
     fill: #ffffff;
 }
 /* .modal-link-cross{
@@ -111,12 +115,12 @@ img{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: rgba(46, 47, 66, 1);
 }
-.modal-link-cross-svg:hover{
+/* .modal-link-cross-svg:hover{
      fill: #ffffff;
 }
 .modal-link-cross-svg:focus{
      fill: #ffffff;
-}
+} */
 /* .information{
     padding: 72px 24px 24px 24px;
 } */
@@ -197,9 +201,11 @@ img{
     color: rgba(142, 143, 153, 1);
     margin-top: 10px;
  }
- .checkbox-group-input:checked{
-    background-color: #404bbf;;
- }
+ .checkbox-group-input:checked + .checkbox-group-lab-link{
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+ } 
  .checkbox-group-input:checked .checkbox-group-lab-link{
     border: none;
     fill:#F4F4FD;
