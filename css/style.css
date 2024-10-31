@@ -9,6 +9,22 @@ body{
     padding-right: 15px;
     margin: 0 auto;
 }
+
+:root {
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--grey: rgba(46, 47, 66, 0.7);
+	--white: #fff;
+	--dairy: #fcfcfc;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0; 
@@ -143,7 +159,10 @@ img{
     color: #8e8f99;
     display: block;
     margin-bottom: 4px; 
-}
+ }
+ .form-label-comment{
+    margin-bottom: 16px;
+ }
  .input-container{
         position: relative;
     }
@@ -160,6 +179,9 @@ img{
 .form-input:focus{
     border-color: #4D5AE5;
 }
+.form-input:focus + .modal-link-input-svg{
+     fill: #4D5AE5;
+} 
 .modal-link-input-svg{
     position: absolute;
     left: 16px;
@@ -202,14 +224,14 @@ img{
     margin-top: 10px;
  }
  .checkbox-group-input:checked + .checkbox-group-lab-link{
-    background-color: #404bbf;
+    background-color: var(--iris);
     border: none;
-    fill: #F4F4FD;
+    fill: var(--cloud);
  } 
- .checkbox-group-input:checked .checkbox-group-lab-link{
+ /* .checkbox-group-input:checked .checkbox-group-lab-link{
     border: none;
     fill:#F4F4FD;
- }
+ } */
  .checkbox-group-lab{
     font-size: 12px;
     line-height: 1.17;
